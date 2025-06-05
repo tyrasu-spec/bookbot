@@ -13,3 +13,13 @@ def char_count(text):
                 char_count[char] = 1
 
     return char_count
+
+def to_dict_list(dict):
+    dict_list = []
+    for entry in dict:
+        new_dict = {}
+        new_dict["char"] = entry
+        new_dict["num"] = dict[entry]
+        dict_list.append(new_dict)
+    return dict_list
+    
